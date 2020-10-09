@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 10px;
+}
+
+body {
+    background: #eee;
+    font-size: 16px;
+}
+
+.wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+p {
+    font-size: 0.875em;
+    line-height: 1.4em;
+    max-width: 40%;
+    position: relative;
+    z-index: 1;
+}
+
+.button {
+    color: black;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 2px solid black;
+    margin-top: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.product-demo {
+    transform: translate(200px, -230px) scale(0.8);
+    width: 605px;
+    height: 806px;
+    background: url(./productSpriteSheet.png);
+}

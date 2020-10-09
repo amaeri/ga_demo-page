@@ -1,10 +1,14 @@
 window.addEventListener('wheel', handleScroll);
 
-function handleScroll(event) {
+
+let frame = 0;
+
+function handleScroll() {
     // event.deltaY
-    let productElm = document.querySelector('.product-demo')
-    console.log(productElm)
-    // productElm.style.cssText = "border: 5px solid black"
+    let productElm = document.querySelector('.product-demo');
+    productElm.style.cssText = "background-position-x: calc("+ Math.floor(frame) +" * -605px);";
+    frame += 0.1;
+    if(frame > 3) frame = 0;
 }
 
 // samme som: bare med scroll

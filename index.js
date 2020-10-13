@@ -22,8 +22,8 @@ orderBtn.addEventListener('mousedown', handleOrderClick);
 function handleOrderClick(event) {
     console.log('Order button was clicked');
     
-    gtag('event', 'Click link', {
-        'event_category': 'interactive tests',
-        'event_label': 'Self assured link'
+    gtag('event', 'Order Click', {
+        'event_category': 'order test',
+        'event_label': 'order event happened'
     });
 }

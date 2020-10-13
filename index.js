@@ -15,3 +15,15 @@ function handleScroll() {
 // window.addEventListener('scroll', (event) => {
 //     console.log('scroll', event.deltaY)
 // })
+
+let orderBtn = document.querySelector('#order-button');
+orderBtn.addEventListener('mousedown', handleOrderClick);
+
+function handleOrderClick(event) {
+    console.log('Order button was clicked');
+    
+    gtag('event', 'Click link', {
+        'event_category': 'interactive tests',
+        'event_label': 'Self assured link'
+    });
+}
